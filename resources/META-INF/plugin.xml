@@ -1,0 +1,42 @@
+<idea-plugin>
+  <id>com.your.company.unique.plugin.id</id>
+  <name>uploadProjectPlg</name>
+  <version>1.0</version>
+  <vendor email="773613033@qq.com" url="http://www.baidu.com">文件上传</vendor>
+
+  <description>
+    上传项目插件1111111111111111111111111111111111111111111111111111111111111
+  </description>
+
+  <change-notes>
+    222222222222222222222222222222222222222222222222222222222222222222222
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!--<group id="MyPlugin.SampleMenu" text="Sample Menu" description="Sample menu">-->
+      <!--<add-to-group group-id="MainMenu" anchor="last"  />-->
+      <!--<action id="Myplugin.Textboxes" class="Test" text="Text Boxes" description="A test menu item" />-->
+    <!--</group>-->
+
+    <action id="main.UploadProjectPlugin" class="main.UploadProjectPlugin" text="UploadProjectPlugin" description="右键Action">
+      <add-to-group group-id="ProjectViewPopupMenu" anchor="after" relative-to-action="ReplaceInPath"/>
+    </action>
+    <!--<action id="HelloWorld" class="main.UploadProjectPlugin" text="Say Hello!">-->
+      <!--<add-to-group group-id="WindowMenu" anchor="first"/>-->
+    <!--</action>-->
+  </actions>
+
+</idea-plugin>
